@@ -1,0 +1,29 @@
+{
+  "tls": {
+    "impersonate": "chrome150",
+    "timeout": 30
+  },
+  "proxies": {
+    "enabled": false,
+    "file": "data/proxies.txt",
+    "rotation": "roundrobin",
+    "scheme": "http"
+  },
+  "http": {
+    "graphql": "https://publisher.linkvertise.com/graphql",
+    "pageTemplate": "https://linkvertise.com/access/{userId}/{slug}",
+    "origin": "https://linkvertise.com",
+    "referer": "https://linkvertise.com/"
+  },
+  "flow": {
+    "maxSteps": 30,
+    "pollInterval": 1,
+    "maxWaitSeconds": 120,
+    "fallbackUserId": "fallbackUserId"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "endpoint": "/bypass"
+  }
+}
